@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/a4efb3269c.js" crossorigin="anonymous"></script>
+  <title>Kotesh Pakeeri</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <nav id="navbar">
+      <h3>Kotesh Pakeeri</h3>
+      <ul>
+        <li><a href="#sectionhome">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#my-work">MyWork</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <section class="home" id="sectionhome">
+      <div class="home-text">
+        <div class="text-1">
+          <p>Hello,</p>
+        </div>
+        <div class="text-2">
+          <p>I am Kotesh Pakeeri</p>
+        </div>
+        <div class="text-3">
+          <p>And I am a <span>Web Developer</span></p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="cvbtn" id="cvbtn">Download CV</button>
+        <button class="contactbtn" id="contactbtn">Contact Me</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="about" id="about">
+    <div class="about-content-tab">
+      <div class="image">
+        <img src="images/profile-1.jpeg" alt="this is profile imgage" />
+      </div>
+      <div class="text-content">
+        <div class="title">About Me</div>
+        <div class="content">
+          <p class="text-3">
+            I am Kotesh Pakeeri And I am a <span>Web Developer</span>
+          </p>
+          <div class="about-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            beatae sunt similique veniam sed pariatur voluptatibus iste earum,
+            ullam quidem ab possimus aliquid iusto, vel minima perspiciatis at
+            autem error a laboriosam, labore voluptatum! Harum nam illo ab
+            quia provident, quisquam sed ad blanditiis odit eius odio officiis
+            vel eaque placeat illum reiciendis repellendus incidunt tempora.
+            Sint, aliquid architecto delectus magnam eligendi quas quisquam
+            quaerat, temporibus, in fugiat eveniet eos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills" id="skills">
+    <div class="skills-title">
+      <p>Skills</p>
+    </div>
+
+    <div class="card">
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+    </div>
+    <div class="card">
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+      <div class="card-item"></div>
+    </div>
+  </div>
+
+  <div class="my-work" id="my-work">
+    <div class="work-title">
+      <p>My Work</p>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact-title">
+      <p>Contact Me</p>
+    </div>
+
+    <div class="form-content">
+      <form>
+        <input type="text" name="Name" id="name" placeholder="Your Name" /><br />
+        <input type="text" name="email" id="mail" placeholder="Email Address" /><br />
+        <!-- <input type="text" name="msg" id="msg" placeholder="Your message"><br> -->
+        <textarea name="message" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea><br />
+        <div class="sendbtn">
+          <button class="send-btn" id="send">Send Message</button>
+        </div>
+        <div class="media">
+          <div class="fb">facebook</div>
+          <div class="insta">insta</div>
+          <div class="twitter">twitter</div>
+          <div class="youtbe">Youtube</div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="homebtn" onclick="returntohome">
+    <a href="#sectionhome"><i class="fa-solid fa-angle-up"></i>Home</a>
+  </div>
+</body>
+
+</html>

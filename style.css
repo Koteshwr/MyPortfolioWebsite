@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    background-image: url(images/bgpic3.png);
+    background-size: cover;
+}
+/* .navbar{
+    position: fixed;
+} */
+.homebtn i{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: crimson;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size:35px;
+}
+.navbar{
+    width: 100vw;
+}
+.navbar nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    background-color: transparent;
+    position: fixed;
+}
+
+nav ul{
+    padding: 0px 100px 0px 20px;
+}
+nav h3{
+    padding-left: 20px;
+    color: white;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+.home{
+    height: 100vh;
+    width: 100;
+    justify-content: center;
+    align-items: center;
+}
+.home-text{
+    padding-top: 200px;
+    padding-left: 140px;
+    color: white;
+}
+.text-1 p{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.text-2 p{
+    color: white;
+    font-size: 50px;
+}
+.text-3 p{
+    font-size: 30px;
+
+}
+.text-3 span{
+    color: crimson;
+}
+
+/* Home-btns */
+
+.cvbtn{
+    border-color: white;
+    padding: 10px 25px;
+    color: white;
+    background:transparent;
+    border-radius: 15px;
+    border-width: 2px;
+}
+
+.contactbtn{
+    border-color: white;
+    padding: 10px 25px;
+    margin-left: 60px;
+    color: white;
+    background:transparent;
+    border-radius: 15px;
+    border-width: 2px;
+    
+}
+.buttons{
+    margin-top: 60px;
+    margin-left: 160px;
+}
+
+
+/* About section */
+.about-content-tab{
+    width: 100vw;
+    color: white;
+    height: 70vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    flex: 30%;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px 70px; */
+
+}
+.image img{
+    width: 45%;
+    height: auto;
+}
+.text-content{
+    flex: 70%;
+    /* padding: 0px 5px 40px 30px; */
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.about-content{
+    margin-top: 20px;
+}
+.content{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+
+/* skills section  */
+
+.skills{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.skills-title{
+    /* padding: 30px; */
+    margin-bottom: 20px;
+}
+.skills-title p{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+.card-item{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+.my-work{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+}
+.work-title p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.contact{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+}
+.contact-title p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.form-content{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content input{
+    border: solid 2px white;
+    padding: 5px 10px;
+    color: white;
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 35vw;
+    height: 7vh;
+}
+    .form-content #msg{
+    text-align:start;
+    border: solid 2px white;
+    padding: 5px 10px;
+    width: 35vw;
+    border-radius: 5px;
+    height: 20vh;  
+    color: white;
+    background: transparent;
+}
+.sendbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.send-btn{
+    justify-items: end;
+    border-color: white;
+    padding: 10px 25px;
+    color: white;
+    background:transparent;
+    border-radius: 15px;
+    border-width: 2px;
+    margin-top: 20px;
+}
+.media
+{
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.media div{
+    padding: 30px 20px;
+}
