@@ -53,7 +53,15 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
     padding-left: 50px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+    color: crimson;
+    transform: scale(1.5);
+
 }
 .home{
     height: 100vh;
@@ -87,24 +95,26 @@ nav ul li a {
 /* Home-btns */
 
 .cvbtn{
+    margin-right: 50px;
     border-color: white;
     padding: 10px 25px;
     color: white;
     background:transparent;
     border-radius: 15px;
     border-width: 2px;
+    cursor: pointer;
+}
+.cvbtn a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
-.contactbtn{
-    border-color: white;
-    padding: 10px 25px;
-    margin-left: 60px;
-    color: white;
-    background:transparent;
-    border-radius: 15px;
-    border-width: 2px;
-    
+
+.cvbtn a:hover{
+    color: crimson;
 }
+
 .buttons{
     margin-top: 60px;
     margin-left: 160px;
@@ -137,6 +147,8 @@ nav ul li a {
     font-size: 40px;
 }
 .about-content{
+    text-align: left;
+    padding: 0px 70px;
     margin-top: 20px;
 }
 .content{
@@ -219,7 +231,9 @@ nav ul li a {
 .js-icon{
     color: black;
 }
-
+.inps{
+    border:2px solid #333;
+}
 .my-work{
     background-color: black;
     min-height: fit-content;
@@ -237,7 +251,7 @@ nav ul li a {
 }
 .contact{
     background-color: black;
-    height: 100vh;
+    min-height: fit-content;
     width: 100vw;
 
 }
@@ -302,6 +316,7 @@ nav ul li a {
 .media
 {
 
+    /* padding-top: 60px; */
     color: white;
     display: flex;
     flex-direction: row;
@@ -429,7 +444,46 @@ nav ul li a {
     background-color: #000000;
     color: crimson;
 }
+.text{
+    padding-top: 60px;
+    justify-self: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
 
+/* footer styling */
+
+.media-footer{
+    font: 10px;
+    padding-right: 20px;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer{
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+.ftext{
+    font-weight: 800;
+    color: #333;
+}
+.ficon-med{
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+    transition: 0.5s;
+}
+.ficon-med:hover{
+    color: crimson;
+    transform: scale(1.5);
+}
 @media (max-width: 480px) {
     .work-container .work-card {
         width: 230px;
