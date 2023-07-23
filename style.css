@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
+    font-family: 'ubuntu';
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* background-color: black; */
+    /* overflow-x: hidden; */
+    max-width: 100%;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 .container{
@@ -108,9 +113,12 @@ nav ul li a {
 
 /* About section */
 .about-content-tab{
+    padding: 40px;
     width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
     color: white;
-    height: 70vh;
+    min-height: 80vh;
     background: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
@@ -118,17 +126,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
-.image{
-    flex: 30%;
-    justify-content: center;
-    align-items: center;
-    /* padding: 40px 70px; */
 
-}
-.image img{
-    width: 45%;
-    height: auto;
-}
+
 .text-content{
     flex: 70%;
     /* padding: 0px 5px 40px 30px; */
@@ -169,23 +168,61 @@ nav ul li a {
 
 
 .card{
+    margin: 40px;
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 10px;
+    /* margin: 20px; */
 }
 .card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     height: 200px;
     width: 200px;
-    background-color: aqua;
     border-radius: 10px;
+    border: 2px solid rgba(220, 20, 60, 0.253);
+    overflow: hidden;
 }
+.card-item:hover{
+    border: 2px solid rgba(220, 20, 60, 0.74);
+    box-shadow:  2px 4px 2px rgba(220, 20, 60, 0.767),2px 4px 2px rgba(220, 20, 60, 0.767),2px 4px 4px rgba(220, 20, 60, 0.767),2px 4px 2px rgba(220, 20, 60, 0.767);
 
+}
+.icon{
+    font-size: 80px;
+    color: crimson;
+    transition: 0.5s;
+}
+.card-item:hover .icon{
+    transform: scale(1.5);
+}
+.jscript{
+    bottom: -40px;
+}
+.icon-title
+{
+    position: relative;
+    bottom: -20px;
+    font: bold;
+    color: #dc143c;
+}
+.svg-icon{
+    transition: 0.5s;
+    fill: crimson;
+}
+.card-item:hover .svg-icon{
+    transform: scale(1.5);
+}
+.js-icon{
+    color: black;
+}
 
 .my-work{
     background-color: black;
-    height: 100vh;
+    min-height: fit-content;
     width: 100vw;
 
 }
@@ -195,7 +232,9 @@ nav ul li a {
     text-align: center;
     
 }
-
+.buzz{
+    color: #747474;
+}
 .contact{
     background-color: black;
     height: 100vh;
@@ -250,7 +289,15 @@ nav ul li a {
     background:transparent;
     border-radius: 15px;
     border-width: 2px;
+    cursor: pointer;
     margin-top: 20px;
+}
+.send-btn:hover{
+    color: crimson;
+    border-color: crimson;
+}
+.inps:hover{
+    border-color: #dc143c;
 }
 .media
 {
@@ -263,4 +310,142 @@ nav ul li a {
 }
 .media div{
     padding: 30px 20px;
+}
+.icon-med{
+    color: rgb(75, 75, 75);
+    font-size: 30px;
+    transition: 0.5s;
+}
+.icon-med:hover{
+    color: crimson;
+    transform: scale(1.5);
+}
+
+/* Styling work section */
+
+.main-cont{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+}
+.work-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.work-container .work-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: rgba(35, 35, 35, 0.40);
+    border-radius: 20px;
+    transition: 0.5s;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+}
+
+.work-container .work-card:hover {
+    min-height: 400px;
+}
+
+.work-container .work-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.work-container .work-card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.work-container .work-card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-container .work-card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 10px 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.work-container .work-card:hover .content {
+    top: 130px;
+    height: 300px;
+}
+
+.work-container .work-card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+    padding-bottom: 10px;
+}
+
+.work-container .work-card .content p {
+    color: #333;
+}
+
+.work-container .work-card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.work-container .work-card .content a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: crimson;
+}
+
+@media (max-width: 480px) {
+    .work-container .work-card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .work-container .work-card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .work-container .work-card .content p {
+        font-size: 0.8rem;
+    }
+
+    .work-container .work-card .content a {
+        font-size: 0.9rem;
+    }
 }
